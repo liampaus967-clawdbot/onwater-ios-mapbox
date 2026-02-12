@@ -133,7 +133,7 @@ struct MapboxMapView: UIViewRepresentable {
         // Add HRRR wind raster array source
         var windSource = RasterArraySource(id: "wind-source")
         windSource.url = "mapbox://onwaterllc.hrrr_wind_northeast"
-        windSource.tileSize = 512
+//        windSource.tileSize = 512
         windSource.minzoom = 4
         windSource.maxzoom = 8
         
