@@ -143,7 +143,7 @@ struct MapboxMapView: UIViewRepresentable {
             // Add animated wind particle layer
             var windLayer = RasterParticleLayer(id: "wind-layer", source: "wind-source")
             windLayer.sourceLayer = "wind10m"
-            windLayer.rasterParticleArrayBand = .constant("wind10m")
+            windLayer.rasterParticleArrayBand = .constant("1770854400")
             windLayer.rasterParticleCount = .constant(1024)
             windLayer.rasterParticleMaxSpeed = .constant(18)  // Data range: -9.6 to 17.4 m/s
             windLayer.rasterParticleSpeedFactor = .constant(0.4)
