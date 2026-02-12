@@ -144,10 +144,10 @@ struct MapboxMapView: UIViewRepresentable {
             var windLayer = RasterParticleLayer(id: "wind-layer", source: "wind-source")
             windLayer.sourceLayer = "wind10m"
             windLayer.rasterParticleArrayBand = .constant("1770854400")
-            windLayer.rasterParticleCount = .constant(1024)
-            windLayer.rasterParticleMaxSpeed = .constant(18)  // Data range: -9.6 to 17.4 m/s
+            windLayer.rasterParticleCount = .constant(3000)
+            windLayer.rasterParticleMaxSpeed = .constant(40)
             windLayer.rasterParticleSpeedFactor = .constant(0.4)
-            windLayer.rasterParticleResetRateFactor = .constant(0.8)
+            windLayer.rasterParticleResetRateFactor = .constant(0.4)
             windLayer.rasterParticleFadeOpacityFactor = .constant(0.9)
             windLayer.minZoom = 4
             windLayer.maxZoom = 22
@@ -155,11 +155,22 @@ struct MapboxMapView: UIViewRepresentable {
                 Exp(.interpolate) {
                     Exp(.linear)
                     Exp(.rasterParticleSpeed)
-                    0; UIColor.systemCyan
-                    5; UIColor.systemGreen
-                    10; UIColor.systemYellow
-                    14; UIColor.systemOrange
-                    18; UIColor.systemRed
+                    1.5; UIColor(red: 134/255, green: 163/255, blue: 171/255, alpha: 1.0)
+                    2.5; UIColor(red: 126/255, green: 152/255, blue: 188/255, alpha: 1.0)
+                    4.12; UIColor(red: 110/255, green: 143/255, blue: 208/255, alpha: 1.0)
+                    6.17; UIColor(red: 15/255, green: 147/255, blue: 167/255, alpha: 1.0)
+                    9.26; UIColor(red: 57/255, green: 163/255, blue: 57/255, alpha: 1.0)
+                    11.83; UIColor(red: 194/255, green: 134/255, blue: 62/255, alpha: 1.0)
+                    14.92; UIColor(red: 200/255, green: 66/255, blue: 13/255, alpha: 1.0)
+                    18.0; UIColor(red: 210/255, green: 0/255, blue: 50/255, alpha: 1.0)
+                    21.6; UIColor(red: 175/255, green: 80/255, blue: 136/255, alpha: 1.0)
+                    25.21; UIColor(red: 117/255, green: 74/255, blue: 147/255, alpha: 1.0)
+                    29.32; UIColor(red: 68/255, green: 105/255, blue: 141/255, alpha: 1.0)
+                    33.44; UIColor(red: 194/255, green: 251/255, blue: 119/255, alpha: 1.0)
+                    43.72; UIColor(red: 241/255, green: 255/255, blue: 109/255, alpha: 1.0)
+                    50.41; UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1.0)
+                    59.16; UIColor(red: 0/255, green: 255/255, blue: 255/255, alpha: 1.0)
+                    69.44; UIColor(red: 255/255, green: 37/255, blue: 255/255, alpha: 1.0)
                 }
             )
             
