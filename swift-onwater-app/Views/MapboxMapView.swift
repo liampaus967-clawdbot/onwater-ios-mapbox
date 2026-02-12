@@ -15,8 +15,8 @@ struct MapboxMapView: UIViewRepresentable {
         let cameraOptions = CameraOptions(
             center: CLLocationCoordinate2D(latitude: 44.5, longitude: -72.7),
             zoom: 9,
+            bearing: 0,
             pitch: 45,
-            bearing: -10
         )
         
         // Map initialization options
