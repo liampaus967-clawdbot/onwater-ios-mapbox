@@ -134,27 +134,32 @@ struct MapboxMapView: UIViewRepresentable {
         var windSource = RasterArraySource(id: "wind-source")
         windSource.url = "mapbox://onwaterllc.hrrr_wind_northeast"
         windSource.tileSize = 512
+        windSource.minzoom = 4
+        windSource.maxzoom = 8
         
         do {
             try mapView.mapboxMap.addSource(windSource)
             
             // Add animated wind particle layer
             var windLayer = RasterParticleLayer(id: "wind-layer", source: "wind-source")
+            windLayer.sourceLayer = "wind10m"
             windLayer.rasterParticleArrayBand = .constant("wind10m")
             windLayer.rasterParticleCount = .constant(1024)
-            windLayer.rasterParticleMaxSpeed = .constant(40)
+            windLayer.rasterParticleMaxSpeed = .constant(18)  // Data range: -9.6 to 17.4 m/s
             windLayer.rasterParticleSpeedFactor = .constant(0.4)
             windLayer.rasterParticleResetRateFactor = .constant(0.8)
             windLayer.rasterParticleFadeOpacityFactor = .constant(0.9)
+            windLayer.minZoom = 4
+            windLayer.maxZoom = 8
             windLayer.rasterParticleColor = .expression(
                 Exp(.interpolate) {
                     Exp(.linear)
                     Exp(.rasterParticleSpeed)
                     0; UIColor.systemCyan
-                    10; UIColor.systemGreen
-                    20; UIColor.systemYellow
-                    30; UIColor.systemOrange
-                    40; UIColor.systemRed
+                    5; UIColor.systemGreen
+                    10; UIColor.systemYellow
+                    14; UIColor.systemOrange
+                    18; UIColor.systemRed
                 }
             )
             
