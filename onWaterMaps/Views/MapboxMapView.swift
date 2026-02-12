@@ -30,7 +30,7 @@ struct MapboxMapView: UIViewRepresentable {
         mapView.autoresizingMask = [UIView.AutoresizingMask.flexibleWidth, UIView.AutoresizingMask.flexibleHeight]
         
         // Enable user location
-        mapView.location.options.puckType = Puck2DConfiguration()
+        mapView.location.options.puckType = PuckType.puck2D()
         
         // Add terrain and layers when style loads
         mapView.mapboxMap.onStyleLoaded.observeNext { _ in
