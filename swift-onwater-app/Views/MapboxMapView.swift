@@ -1,6 +1,5 @@
 import SwiftUI
 import MapboxMaps
-import UIKit
 
 struct MapboxMapView: UIViewRepresentable {
     @Binding var layerConfig: MapLayerConfig
@@ -16,8 +15,8 @@ struct MapboxMapView: UIViewRepresentable {
         let cameraOptions = CameraOptions(
             center: CLLocationCoordinate2D(latitude: 44.5, longitude: -72.7),
             zoom: 9,
-            bearing: -10,
-            pitch: 45
+            pitch: 45,
+            bearing: -10
         )
         
         // Map initialization options
@@ -27,11 +26,10 @@ struct MapboxMapView: UIViewRepresentable {
         )
         
         let mapView = MapView(frame: .zero, mapInitOptions: mapInitOptions)
-        mapView.autoresizingMask = [UIView.AutoresizingMask.flexibleWidth, UIView.AutoresizingMask.flexibleHeight]
+        mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         
         // Enable user location
-        mapView.location.options.puckType = PuckType.puck2D()
-
+        mapView.location.options.puckType = .puck2D()
         
         // Add terrain and layers when style loads
         mapView.mapboxMap.onStyleLoaded.observeNext { _ in

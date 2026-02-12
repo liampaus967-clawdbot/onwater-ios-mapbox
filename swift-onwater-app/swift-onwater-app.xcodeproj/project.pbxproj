@@ -7,25 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		699E37DC2F3E238400352F5F /* MapboxMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 699E37DB2F3E238400352F5F /* MapboxMaps */; };
-		699E37E52F3E23FD00352F5F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699E37E12F3E23FD00352F5F /* ContentView.swift */; };
-		699E37E62F3E23FD00352F5F /* MapboxMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699E37E32F3E23FD00352F5F /* MapboxMapView.swift */; };
-		699E37E72F3E23FD00352F5F /* LayerControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699E37E22F3E23FD00352F5F /* LayerControlView.swift */; };
-		699E37E82F3E23FD00352F5F /* MapLayerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699E37DF2F3E23FD00352F5F /* MapLayerConfig.swift */; };
-		699E37E92F3E23FD00352F5F /* onWaterMapsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699E37DD2F3E23FD00352F5F /* onWaterMapsApp.swift */; };
+		699E37AF2F3E20C100352F5F /* MapboxMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 699E37AE2F3E20C100352F5F /* MapboxMaps */; };
+		699E37B82F3E213A00352F5F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699E37B42F3E213A00352F5F /* ContentView.swift */; };
+		699E37B92F3E213A00352F5F /* MapboxMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699E37B62F3E213A00352F5F /* MapboxMapView.swift */; };
+		699E37BA2F3E213A00352F5F /* MapLayerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699E37B22F3E213A00352F5F /* MapLayerConfig.swift */; };
+		699E37BB2F3E213A00352F5F /* onWaterMapsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699E37B02F3E213A00352F5F /* onWaterMapsApp.swift */; };
+		699E37BC2F3E213A00352F5F /* LayerControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699E37B52F3E213A00352F5F /* LayerControlView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		699E37C62F3E235B00352F5F /* swift-onwater-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-onwater-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		699E37DD2F3E23FD00352F5F /* onWaterMapsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onWaterMapsApp.swift; sourceTree = "<group>"; };
-		699E37DF2F3E23FD00352F5F /* MapLayerConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLayerConfig.swift; sourceTree = "<group>"; };
-		699E37E12F3E23FD00352F5F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		699E37E22F3E23FD00352F5F /* LayerControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayerControlView.swift; sourceTree = "<group>"; };
-		699E37E32F3E23FD00352F5F /* MapboxMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapboxMapView.swift; sourceTree = "<group>"; };
+		699E379F2F3E1F6100352F5F /* swift-onwater-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-onwater-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		699E37B02F3E213A00352F5F /* onWaterMapsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onWaterMapsApp.swift; sourceTree = "<group>"; };
+		699E37B22F3E213A00352F5F /* MapLayerConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLayerConfig.swift; sourceTree = "<group>"; };
+		699E37B42F3E213A00352F5F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		699E37B52F3E213A00352F5F /* LayerControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayerControlView.swift; sourceTree = "<group>"; };
+		699E37B62F3E213A00352F5F /* MapboxMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapboxMapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		699E37C82F3E235B00352F5F /* swift-onwater-app */ = {
+		699E37A12F3E1F6100352F5F /* swift-onwater-app */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "swift-onwater-app";
 			sourceTree = "<group>";
@@ -33,58 +33,58 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		699E37C32F3E235B00352F5F /* Frameworks */ = {
+		699E379C2F3E1F6100352F5F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				699E37DC2F3E238400352F5F /* MapboxMaps in Frameworks */,
+				699E37AF2F3E20C100352F5F /* MapboxMaps in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		699E37BD2F3E235B00352F5F = {
+		699E37962F3E1F6100352F5F = {
 			isa = PBXGroup;
 			children = (
-				699E37DE2F3E23FD00352F5F /* App */,
-				699E37E02F3E23FD00352F5F /* Models */,
-				699E37E42F3E23FD00352F5F /* Views */,
-				699E37C82F3E235B00352F5F /* swift-onwater-app */,
-				699E37C72F3E235B00352F5F /* Products */,
+				699E37B12F3E213A00352F5F /* App */,
+				699E37B32F3E213A00352F5F /* Models */,
+				699E37B72F3E213A00352F5F /* Views */,
+				699E37A12F3E1F6100352F5F /* swift-onwater-app */,
+				699E37A02F3E1F6100352F5F /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		699E37C72F3E235B00352F5F /* Products */ = {
+		699E37A02F3E1F6100352F5F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				699E37C62F3E235B00352F5F /* swift-onwater-app.app */,
+				699E379F2F3E1F6100352F5F /* swift-onwater-app.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		699E37DE2F3E23FD00352F5F /* App */ = {
+		699E37B12F3E213A00352F5F /* App */ = {
 			isa = PBXGroup;
 			children = (
-				699E37DD2F3E23FD00352F5F /* onWaterMapsApp.swift */,
+				699E37B02F3E213A00352F5F /* onWaterMapsApp.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
 		};
-		699E37E02F3E23FD00352F5F /* Models */ = {
+		699E37B32F3E213A00352F5F /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				699E37DF2F3E23FD00352F5F /* MapLayerConfig.swift */,
+				699E37B22F3E213A00352F5F /* MapLayerConfig.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		699E37E42F3E23FD00352F5F /* Views */ = {
+		699E37B72F3E213A00352F5F /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				699E37E12F3E23FD00352F5F /* ContentView.swift */,
-				699E37E22F3E23FD00352F5F /* LayerControlView.swift */,
-				699E37E32F3E23FD00352F5F /* MapboxMapView.swift */,
+				699E37B42F3E213A00352F5F /* ContentView.swift */,
+				699E37B52F3E213A00352F5F /* LayerControlView.swift */,
+				699E37B62F3E213A00352F5F /* MapboxMapView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -92,68 +92,68 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		699E37C52F3E235B00352F5F /* swift-onwater-app */ = {
+		699E379E2F3E1F6100352F5F /* swift-onwater-app */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 699E37D12F3E235C00352F5F /* Build configuration list for PBXNativeTarget "swift-onwater-app" */;
+			buildConfigurationList = 699E37AA2F3E1F6200352F5F /* Build configuration list for PBXNativeTarget "swift-onwater-app" */;
 			buildPhases = (
-				699E37C22F3E235B00352F5F /* Sources */,
-				699E37C32F3E235B00352F5F /* Frameworks */,
-				699E37C42F3E235B00352F5F /* Resources */,
+				699E379B2F3E1F6100352F5F /* Sources */,
+				699E379C2F3E1F6100352F5F /* Frameworks */,
+				699E379D2F3E1F6100352F5F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				699E37C82F3E235B00352F5F /* swift-onwater-app */,
+				699E37A12F3E1F6100352F5F /* swift-onwater-app */,
 			);
 			name = "swift-onwater-app";
 			packageProductDependencies = (
-				699E37DB2F3E238400352F5F /* MapboxMaps */,
+				699E37AE2F3E20C100352F5F /* MapboxMaps */,
 			);
 			productName = "swift-onwater-app";
-			productReference = 699E37C62F3E235B00352F5F /* swift-onwater-app.app */;
+			productReference = 699E379F2F3E1F6100352F5F /* swift-onwater-app.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		699E37BE2F3E235B00352F5F /* Project object */ = {
+		699E37972F3E1F6100352F5F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2620;
 				LastUpgradeCheck = 2620;
 				TargetAttributes = {
-					699E37C52F3E235B00352F5F = {
+					699E379E2F3E1F6100352F5F = {
 						CreatedOnToolsVersion = 26.2;
 					};
 				};
 			};
-			buildConfigurationList = 699E37C12F3E235B00352F5F /* Build configuration list for PBXProject "swift-onwater-app" */;
+			buildConfigurationList = 699E379A2F3E1F6100352F5F /* Build configuration list for PBXProject "swift-onwater-app" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 699E37BD2F3E235B00352F5F;
+			mainGroup = 699E37962F3E1F6100352F5F;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				699E37DA2F3E238400352F5F /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */,
+				699E37AD2F3E20C100352F5F /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */,
 			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 699E37C72F3E235B00352F5F /* Products */;
+			productRefGroup = 699E37A02F3E1F6100352F5F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				699E37C52F3E235B00352F5F /* swift-onwater-app */,
+				699E379E2F3E1F6100352F5F /* swift-onwater-app */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		699E37C42F3E235B00352F5F /* Resources */ = {
+		699E379D2F3E1F6100352F5F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -163,22 +163,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		699E37C22F3E235B00352F5F /* Sources */ = {
+		699E379B2F3E1F6100352F5F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				699E37E52F3E23FD00352F5F /* ContentView.swift in Sources */,
-				699E37E62F3E23FD00352F5F /* MapboxMapView.swift in Sources */,
-				699E37E72F3E23FD00352F5F /* LayerControlView.swift in Sources */,
-				699E37E82F3E23FD00352F5F /* MapLayerConfig.swift in Sources */,
-				699E37E92F3E23FD00352F5F /* onWaterMapsApp.swift in Sources */,
+				699E37B82F3E213A00352F5F /* ContentView.swift in Sources */,
+				699E37B92F3E213A00352F5F /* MapboxMapView.swift in Sources */,
+				699E37BA2F3E213A00352F5F /* MapLayerConfig.swift in Sources */,
+				699E37BB2F3E213A00352F5F /* onWaterMapsApp.swift in Sources */,
+				699E37BC2F3E213A00352F5F /* LayerControlView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		699E37CF2F3E235C00352F5F /* Debug */ = {
+		699E37A82F3E1F6200352F5F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -242,7 +242,7 @@
 			};
 			name = Debug;
 		};
-		699E37D02F3E235C00352F5F /* Release */ = {
+		699E37A92F3E1F6200352F5F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -299,7 +299,7 @@
 			};
 			name = Release;
 		};
-		699E37D22F3E235C00352F5F /* Debug */ = {
+		699E37AB2F3E1F6200352F5F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -331,7 +331,7 @@
 			};
 			name = Debug;
 		};
-		699E37D32F3E235C00352F5F /* Release */ = {
+		699E37AC2F3E1F6200352F5F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -366,20 +366,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		699E37C12F3E235B00352F5F /* Build configuration list for PBXProject "swift-onwater-app" */ = {
+		699E379A2F3E1F6100352F5F /* Build configuration list for PBXProject "swift-onwater-app" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				699E37CF2F3E235C00352F5F /* Debug */,
-				699E37D02F3E235C00352F5F /* Release */,
+				699E37A82F3E1F6200352F5F /* Debug */,
+				699E37A92F3E1F6200352F5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		699E37D12F3E235C00352F5F /* Build configuration list for PBXNativeTarget "swift-onwater-app" */ = {
+		699E37AA2F3E1F6200352F5F /* Build configuration list for PBXNativeTarget "swift-onwater-app" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				699E37D22F3E235C00352F5F /* Debug */,
-				699E37D32F3E235C00352F5F /* Release */,
+				699E37AB2F3E1F6200352F5F /* Debug */,
+				699E37AC2F3E1F6200352F5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -387,7 +387,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		699E37DA2F3E238400352F5F /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */ = {
+		699E37AD2F3E20C100352F5F /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mapbox/mapbox-maps-ios.git";
 			requirement = {
@@ -398,12 +398,12 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		699E37DB2F3E238400352F5F /* MapboxMaps */ = {
+		699E37AE2F3E20C100352F5F /* MapboxMaps */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 699E37DA2F3E238400352F5F /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */;
+			package = 699E37AD2F3E20C100352F5F /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */;
 			productName = MapboxMaps;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 699E37BE2F3E235B00352F5F /* Project object */;
+	rootObject = 699E37972F3E1F6100352F5F /* Project object */;
 }
