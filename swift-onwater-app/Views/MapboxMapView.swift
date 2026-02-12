@@ -22,7 +22,7 @@ struct MapboxMapView: UIViewRepresentable {
         // Map initialization options
         let mapInitOptions = MapInitOptions(
             cameraOptions: cameraOptions,
-            styleURI: .outdoors
+            styleURI: .dark
         )
         
         let mapView = MapView(frame: .zero, mapInitOptions: mapInitOptions)
