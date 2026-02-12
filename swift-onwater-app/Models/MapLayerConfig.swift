@@ -5,4 +5,5 @@ struct MapLayerConfig {
     var showTerrain: Bool = true
     var showPublicLands: Bool = true
     var showContours: Bool = true
+    var showWind: Bool = true
 }

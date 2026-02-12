@@ -35,6 +35,7 @@ struct MapboxMapView: UIViewRepresentable {
         mapView.mapboxMap.onStyleLoaded.observeNext { _ in
             self.setupTerrain(mapView: mapView)
             self.setupRiversLayer(mapView: mapView)
+            self.setupWindLayer(mapView: mapView)
         }.store(in: &context.coordinator.cancelables)
         
         context.coordinator.mapView = mapView
@@ -128,6 +129,42 @@ struct MapboxMapView: UIViewRepresentable {
         }
     }
     
+    private func setupWindLayer(mapView: MapView) {
+        // Add HRRR wind raster array source
+        var windSource = RasterArraySource(id: "wind-source")
+        windSource.url = "mapbox://onwaterllc.hrrr_wind_northeast"
+        windSource.tileSize = 512
+        
+        do {
+            try mapView.mapboxMap.addSource(windSource)
+            
+            // Add animated wind particle layer
+            var windLayer = RasterParticleLayer(id: "wind-layer", source: "wind-source")
+            windLayer.rasterParticleArrayBand = .constant("wind10m")
+            windLayer.rasterParticleCount = .constant(1024)
+            windLayer.rasterParticleMaxSpeed = .constant(40)
+            windLayer.rasterParticleSpeedFactor = .constant(0.4)
+            windLayer.rasterParticleResetRateFactor = .constant(0.8)
+            windLayer.rasterParticleFadeOpacityFactor = .constant(0.9)
+            windLayer.rasterParticleColor = .expression(
+                Exp(.interpolate) {
+                    Exp(.linear)
+                    Exp(.rasterParticleSpeed)
+                    0; UIColor.systemCyan
+                    10; UIColor.systemGreen
+                    20; UIColor.systemYellow
+                    30; UIColor.systemOrange
+                    40; UIColor.systemRed
+                }
+            )
+            
+            try mapView.mapboxMap.addLayer(windLayer)
+            print("✅ Wind particle layer added")
+        } catch {
+            print("❌ Error setting up wind layer: \(error)")
+        }
+    }
+    
     private func updateLayerVisibility(mapView: MapView) {
         do {
             // Toggle rivers layer
@@ -136,6 +173,10 @@ struct MapboxMapView: UIViewRepresentable {
             }
             try mapView.mapboxMap.updateLayer(withId: "rivers-labels", type: SymbolLayer.self) { layer in
                 layer.visibility = .constant(layerConfig.showRivers ? .visible : .none)
+            }
+            // Toggle wind layer
+            try mapView.mapboxMap.updateLayer(withId: "wind-layer", type: RasterParticleLayer.self) { layer in
+                layer.visibility = .constant(layerConfig.showWind ? .visible : .none)
             }
         } catch {
             // Layer might not exist yet

@@ -69,6 +69,16 @@ struct LayerControlView: View {
                         isOn: $layerConfig.showContours,
                         color: .orange
                     )
+                    
+                    Divider().padding(.leading, 56)
+                    
+                    LayerToggleRow(
+                        icon: "wind",
+                        title: "Wind",
+                        subtitle: "Animated HRRR wind particles",
+                        isOn: $layerConfig.showWind,
+                        color: .cyan
+                    )
                 }
             }
         }
