@@ -150,7 +150,7 @@ struct MapboxMapView: UIViewRepresentable {
             windLayer.rasterParticleResetRateFactor = .constant(0.8)
             windLayer.rasterParticleFadeOpacityFactor = .constant(0.9)
             windLayer.minZoom = 4
-            windLayer.maxZoom = 8
+            windLayer.maxZoom = 22
             windLayer.rasterParticleColor = .expression(
                 Exp(.interpolate) {
                     Exp(.linear)
