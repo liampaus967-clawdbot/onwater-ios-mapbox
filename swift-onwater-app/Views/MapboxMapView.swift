@@ -1,5 +1,5 @@
 import SwiftUI
-import MapboxMaps
+@_spi(Experimental) import MapboxMaps
 
 struct MapboxMapView: UIViewRepresentable {
     @Binding var layerConfig: MapLayerConfig
